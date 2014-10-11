@@ -4,17 +4,15 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-
-//MIGHT NEED TO RENAME PARAMETERS
 public class AES {
 
 	//static String plainText = "chocolatevpn mmm"; // 16 char
 	//static String encryptionKey = "chocolatevpn key"; // 16 char key for encryptions
 	static String initialVector = "16 bytes o cocoa"; // initial vector must be 16 bytes long
 
-	public static byte[] encrypt (String plainText, String encryptionKey){
+	public static byte[] encrypt (String text, String encryptionKey){
 
-		plainText = padStringToBe16Bytes(plainText);
+		String plainText = padStringToBe16Bytes(text);
 
 		try{
 			return initAES (Cipher.ENCRYPT_MODE, plainText.getBytes("UTF-8"), encryptionKey);
