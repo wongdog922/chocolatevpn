@@ -17,7 +17,7 @@ public class ClientConnect {
 			System.out.println("Connecting to Server...");
 			clientSocket = new Socket(host, port);
 			serverStream = clientSocket.getInputStream();
-			System.out.println("Created Client Socket\n");
+			System.out.println("Created Client Socket hellohello\n");
 		} catch (IOException e){
 			e.printStackTrace();
 		}
