@@ -4,6 +4,8 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
+
+//big change
 public class AES {
 
 	//static String plainText = "chocolatevpn mmm"; // 16 char
